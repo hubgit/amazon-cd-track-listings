@@ -32,22 +32,12 @@ function prepareClient($method) {
 	date_default_timezone_set('Etc/UTC');
 	$timestamp = date('c');
 
+	$signature = base64_encode(hash_hmac('sha256', $method . $timestamp, AWSSECRETKEY, true));
+
 	$headers = array(
-	  new SoapHeader(
-	    'http://security.amazonaws.com/doc/2007-01-01/',
-	    'AWSAccessKeyId',
-	    AWSACCESSKEYID
-	  ),
-	  new SoapHeader(
-	    'http://security.amazonaws.com/doc/2007-01-01/',
-	    'Timestamp',
-	    $timestamp
-	  ),
-	  new SoapHeader(
-	    'http://security.amazonaws.com/doc/2007-01-01/',
-	    'Signature',
-	    base64_encode(hash_hmac('sha256', $method . $timestamp, AWSSECRETKEY, true))
-	  )
+	  new SoapHeader('http://security.amazonaws.com/doc/2007-01-01/', 'AWSAccessKeyId', AWSACCESSKEYID),
+	  new SoapHeader('http://security.amazonaws.com/doc/2007-01-01/', 'Timestamp', $timestamp),
+	  new SoapHeader('http://security.amazonaws.com/doc/2007-01-01/', 'Signature', $signature)
 	);
 
 	$client->__setSoapHeaders($headers);
