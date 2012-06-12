@@ -1,4 +1,4 @@
 amazon-cd-track-listings
 ========================
 
-Fetch CD Track Listings from Amazon
+Fetch CD track listings from Amazon Product Advertising API
