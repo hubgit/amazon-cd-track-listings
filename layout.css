@@ -1,0 +1,7 @@
+body { font-family: sans-serif; }
+a { text-decoration: none; }
+form { margin: 10px 0; }
+
+.items { display: table; }
+.item { display: table-row; }
+.item > div { display: table-cell; vertical-align: top; padding: 10px 5px; }
