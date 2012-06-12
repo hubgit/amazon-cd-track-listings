@@ -1,6 +1,6 @@
 body { font-family: sans-serif; background: #eee; }
 a { text-decoration: none; }
-form { margin: 10px 0; }
+form { margin: 20px 10px; }
 form input[type=text] { width: 500px; }
 
 .items { display: table; }
@@ -8,3 +8,6 @@ form input[type=text] { width: 500px; }
 .item > div { display: table-cell; vertical-align: top; padding: 10px 5px; }
 
 .title, .creator { font-weight: bold; }
+
+.image { text-align: right; }
+.image img { padding: 5px; background: white; }
