@@ -2,7 +2,7 @@
 
 // https://affiliate-program.amazon.com/gp/advertising/api/detail/main.html
 
-class Amazon {
+class AmazonECS {
 	function search($keywords, $searchIndex, $responseGroup = 'Small') {
 		$request = array(
 			'Keywords' => $keywords,
