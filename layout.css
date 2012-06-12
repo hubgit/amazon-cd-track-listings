@@ -1,7 +1,10 @@
-body { font-family: sans-serif; }
+body { font-family: sans-serif; background: #eee; }
 a { text-decoration: none; }
 form { margin: 10px 0; }
+form input[type=text] { width: 500px; }
 
 .items { display: table; }
 .item { display: table-row; }
 .item > div { display: table-cell; vertical-align: top; padding: 10px 5px; }
+
+.title, .creator { font-weight: bold; }

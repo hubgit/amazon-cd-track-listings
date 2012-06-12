@@ -9,6 +9,6 @@
 
 <body>
 	<form>
-		<input type="text" name="q" size="100" value="<? h($_GET['q']); ?>">
+		<input type="text" name="q" value="<? h($_GET['q']); ?>">
 		<input type="submit" value="Search">
 	</form>

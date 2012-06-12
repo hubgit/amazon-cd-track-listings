@@ -1,4 +1,4 @@
-<? if (!$response->Items) exit('No items found'); ?>
+<? if (!$response->Items->Item) exit('No items found'); ?>
 
 <div class="items">
 <? foreach ($response->Items->Item as $item): ?>
