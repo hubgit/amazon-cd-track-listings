@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>CD Track Listings</title>
 	<link rel="stylesheet" href="layout.css">
-	<link rel="stylesheet" href="items.css">
 </head>
 
 <body>
